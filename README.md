@@ -22,7 +22,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - Step 1: Setting Up the Azure Virtual Machine
 - Step 2: Connecting it to the windows app/Remote Desktop
-- Step 3
+- Step 3: Attempt to ping from within the Windows VM using the private IP address of the Linux-VM
 - Step 4
 - Step 5
 
@@ -47,18 +47,20 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/dzmKrpg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+<p>To retrieve the private IP address of the Ubuntu VM (Linux-vm), we go to the Azure portal, navigate to the VM’s network settings, and note the private IP assigned to it. Then, from the Windows 10 VM, we open PowerShell and use the ping command to test the connection to the Ubuntu VM using its private IP. At the same time, we run Wireshark on the Windows VM to capture and observe the ICMP (ping) requests and replies, confirming that the two VMs can communicate within the same network. Next, we try to ping a public website (like ping google.com) to see how external traffic behaves. If the ping is unsuccessful, it may indicate that outbound ICMP traffic is blocked by Azure’s Network Security Group (NSG) or firewall settings. This experiment helps us understand how network traffic flows between private and public networks in a cloud environment.
+
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/tbdmjqQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+<p>To disable ICMP (ping) traffic for a Linux VM, go to its Network Security Group (NSG) in Azure, add an inbound rule to deny ICMP. To re-enable it, delete or change the rule to allow ICMP. This controls whether the VM can receive ping requests from other machines.
+
 </p>
 <br />
 
