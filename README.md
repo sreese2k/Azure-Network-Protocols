@@ -23,8 +23,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Step 1: Setting Up the Azure Virtual Machine
 - Step 2: Connecting it to the windows app/Remote Desktop
 - Step 3: Attempt to ping from within the Windows VM using the private IP address of the Linux-VM
-- Step 4
-- Step 5
+- Step 4: Disable ICMP (ping) traffic for a Linux VM and to re-enable it
+- Step 5: Obseerve different traffic protocols such as SSH, DHCP, DNS and RDP using PowerShell and Wireshark
 
 <h2>Actions and Observations</h2>
 
