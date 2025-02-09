@@ -28,10 +28,11 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <h2>Actions and Observations</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/EHvgUgh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+<p>To begin, we created a resource group to deploy a Virtual Machine (VM) in Azure with a public IP address, ensuring that it has appropriate inbound rules to allow connections, such as RDP for Windows (port 3389) or SSH for Linux (port 22). This allows us to access the VM remotely. Once the VM is running, we install Wireshark, a powerful network protocol analyzer, to capture and inspect packets traveling to and from the VM.
+
 </p>
 <br />
 
