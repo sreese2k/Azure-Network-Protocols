@@ -65,9 +65,10 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/qOukapZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+<p>And lastly in this project, we worked with SSH, DHCP, DNS, and RDP to understand how they help computers communicate. SSH (Secure Shell) let us securely connect to a Linux VM using the command line. DHCP (Dynamic Host Configuration Protocol) automatically gave IP addresses to our VMs so they could connect to the network. DNS (Domain Name System) translated website names into IP addresses when we accessed online sites. RDP (Remote Desktop Protocol) allowed us to control a Windows VM remotely with a graphical interface. Using Wireshark, we observed how these protocols work by capturing IP assignments, website lookups, and remote connections, giving us a better understanding of cloud networking.
+
 </p>
 <br />
