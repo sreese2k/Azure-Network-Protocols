@@ -41,7 +41,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://imgur.com/4jDFLvN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-<p>Going more in depth, we use a Virtual Machine (VM) to connect to Remote Desktop which lets you access a computer in the cloud from anywhere. First, we create a Windows VM in Azure and make sure Remote Desktop (RDP) is turned on by allowing traffic through port 3389 in the security settings. Then, we find the VM’s public IP address in the Azure portal and use the Remote Desktop Connection (RDC) app on our own computer to connect. After entering the login details, we can control the VM just like a regular computer—opening files, running programs, and managing settings remotely. This is useful for remote work, troubleshooting, and securely accessing cloud resources.
+<p>Going more in depth, we use a Virtual Machine (VM) to connect to Remote Desktop which lets you access a computer in the cloud from anywhere. First, we create a Windows VM in Azure and make sure Remote Desktop (RDP) is turned on by allowing traffic through port 3389 in the security settings. Then, we find the VM’s public IP address in the Azure portal and use the Remote Desktop Connection (RDC) app on our own computer to connect. After entering the login details, we can control the VM just like a regular computer opening files, running programs, and managing settings remotely. This is useful for remote work, troubleshooting, and securely accessing cloud resources.
 
 </p>
 <br />
