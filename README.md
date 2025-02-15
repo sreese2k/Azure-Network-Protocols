@@ -59,7 +59,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://imgur.com/tbdmjqQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-<p>To disable ICMP (ping) traffic for a Linux VM, go to its Network Security Group (NSG) in Azure, add an inbound rule to deny ICMP. To re-enable it, delete or change the rule to allow ICMP. This controls whether the VM can receive ping requests from other machines.
+<p>To disable ICMP (ping) traffic for a Linux VM, go to its Network Security Group (NSG) in Azure, add an inbound rule to deny ICMP. To reenable it, delete or change the rule to allow ICMP. This controls whether the VM can receive ping requests from other machines.
 
 </p>
 <br />
